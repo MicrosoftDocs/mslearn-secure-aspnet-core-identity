@@ -62,3 +62,5 @@ then
         fi
     done
 fi
+
+dotnet restore /workspace/RazorPagesPizza/RazorPagesPizza.csproj
