@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using RazorPagesPizza.Models;
@@ -6,7 +5,6 @@ using RazorPagesPizza.Services;
 
 namespace RazorPagesPizza.Pages
 {
-    [Authorize]
     public class PizzaModel : PageModel
     {
         public List<Pizza> pizzas = new();
