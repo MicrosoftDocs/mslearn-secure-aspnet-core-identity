@@ -63,4 +63,8 @@ then
     done
 fi
 
+# Restore the project dependencies
 dotnet restore /workspace/RazorPagesPizza/RazorPagesPizza.csproj
+
+# Generate a dev cert
+dotnet dev-certs https
