@@ -16,7 +16,7 @@
 				"user": "sa",
 				"password": "P@ssw0rd",
 				"emptyPasswordInput": false,
-				"savePassword": false,
+				"savePassword": true,
 				"profileName": "mssql-container"
 			}
 		]
@@ -63,7 +63,7 @@
 	//      3. Open a terminal in VS Code and run "mkdir -p /home/vscode/.aspnet/https && mv aspnetapp.pfx /home/vscode/.aspnet/https"
 
 	// postCreateCommand.sh parameters: $1=SA password, $2=dacpac path, $3=sql script(s) path
-	"postCreateCommand": "bash .devcontainer/mssql/postCreateCommand.sh 'P@ssw0rd' './bin/Debug/' './.devcontainer/mssql/'",
+	"postCreateCommand": "bash .devcontainer/scripts/postCreateCommand.sh 'P@ssw0rd' './bin/Debug/' './.devcontainer/scripts/'",
 	"features": {}
 
 }
