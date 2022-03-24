@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.224.3/containers/dotnet-mssql
 {
-	"name": "C# (.NET) and MS SQL",
+	"name": "MS Learn: Secure a .NET web app with the ASP.NET Core Identity framework",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspace",
