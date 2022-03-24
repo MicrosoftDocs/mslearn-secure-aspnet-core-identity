@@ -1,6 +1,7 @@
 {
   "recommendations": [
 		"ms-dotnettools.csharp",
-		"ms-mssql.mssql"
+		"ms-mssql.mssql",
+    "ms-vscode-remote.remote-containers"
     ],
 }
