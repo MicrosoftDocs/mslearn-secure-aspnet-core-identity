@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace RazorPagesPizza.Pages;
 
+// [Authorize(Policy = "Admin")]
 public class AdminsOnlyModel : PageModel
 {
     private readonly ILogger<AdminsOnlyModel> _logger;
