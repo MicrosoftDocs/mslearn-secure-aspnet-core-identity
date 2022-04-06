@@ -1,3 +1,6 @@
+# Welcome!
+
+This is the starter project for [Secure a .NET web app with the ASP.NET Core Identity framework](https://docs.microsoft.com/learn/modules/secure-aspnet-core-identity/). A completed version of the project is located on the `solution` branch.
 
 # Contributing
 
