@@ -58,13 +58,13 @@ then
         then
             dbname=$(basename $f ".dacpac")
             echo "Deploying dacpac $f"
-            /opt/sqlpackage/sqlpackage /Action:Publish /SourceFile:$f /TargetServerName:localhost /TargetDatabaseName:$dbname /TargetUser:sa /TargetPassword:$SApassword
+            /opt/sqlpackage/sqlpackage /Action:Publish /SourceFile:$f /TargetServerName:localhost /TargetDatabaseName:$dbname /TargetUser:sa /TargetPassword:$SApassword /TargetEncryptConnection:False
         fi
     done
 fi
 
 # Restore the project dependencies
-dotnet restore /workspace/RazorPagesPizza/RazorPagesPizza.csproj
+dotnet restore ./RazorPagesPizza/RazorPagesPizza.csproj
 
 # Generate a dev cert
 dotnet dev-certs https
