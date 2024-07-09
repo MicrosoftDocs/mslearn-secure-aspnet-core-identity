@@ -63,7 +63,7 @@ then
     done
 fi
 
-sudo dotnet workload update
+dotnet dev-certs https
 
 # Restore the project dependencies
 dotnet restore ./RazorPagesPizza/RazorPagesPizza.csproj
