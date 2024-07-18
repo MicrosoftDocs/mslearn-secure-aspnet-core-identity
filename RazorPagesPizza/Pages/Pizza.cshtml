@@ -6,6 +6,8 @@
 }
 
 <h1>Pizza List 🍕</h1>
+@if (Model.IsAdmin)
+{
 <form method="post" class="card p-3">
     <div class="row">
         <div asp-validation-summary="All"></div>
@@ -22,6 +24,7 @@
         <button class="btn btn-primary">Add</button>
     </div>
 </form>
+}
 <table class="table mt-5">
     <thead>
         <tr>
@@ -29,7 +32,10 @@
             <th scope="col">Price</th>
             <th scope="col">Size</th>
             <th scope="col">Gluten Free</th>
+            @if (Model.IsAdmin)
+            {
             <th scope="col">Delete</th>
+            }
         </tr>
     </thead>
     @foreach (var pizza in Model.pizzas)
@@ -39,11 +45,14 @@
             <td>@($"{pizza.Price:C}")</td>
             <td>@pizza.Size</td>
             <td>@Model.GlutenFreeText(pizza)</td>
+            @if (Model.IsAdmin)
+            {
             <td>
                 <form method="post" asp-page-handler="Delete" asp-route-id="@pizza.Id">
                     <button class="btn btn-danger">Delete</button>
                 </form>
             </td>
+            }
         </tr>
     }
 </table>
